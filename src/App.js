@@ -42,6 +42,12 @@ export default function App() {
             />
           ))}
       </main>
+
+      <footer>
+        <a href="https://github.com/mhuap/shopify-intern-challenge">
+          See on Github
+        </a>
+      </footer>
     </div>
   );
 }
