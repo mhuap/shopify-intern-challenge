@@ -1,4 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+html,
+body {
+  background-color: #fafafa;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  color: #374151;
+}
+
 .App {
-  font-family: sans-serif;
-  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+header {
+  margin: 16px 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 24px;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  display: inline-block;
+  padding-right: 4px;
+}
+
+.card {
+  background-color: white;
+  margin-bottom: 24px;
+  border: 1px solid #dbdbdb;
+  line-height: 18px;
+  /* padding: 16px; */
+  border-radius: 8px;
+  overflow: hidden;
+  /* box-shadow: rgba(50, 50, 93, 0.1) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.1) 0px 30px 60px -30px; */
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.card-strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+  }
+
+  75% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heart.red {
+  color: red;
+  animation: heartbeat 0.5s;
+}
+
+.card-text {
+  padding: 16px;
+}
+
+.card-text.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-date {
+  color: #8e8e8e;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  line-height: 18px;
+}
+
+.more {
+  color: #8e8e8e;
+  margin: -8px 16px 16px 16px;
+  float: right;
+  cursor: pointer;
 }
